@@ -1,0 +1,50 @@
+repos:
+  - repo: builtin
+    hooks:
+      - id: check-yaml
+        name: 📝 Check YAML
+      - id: check-toml
+        name: 📝 Check TOML
+      - id: check-merge-conflict
+        name: 🔀 Check merge conflicts
+      - id: check-added-large-files
+        name: 📦 Check large files
+      - id: trailing-whitespace
+        name: 🧹 Trim trailing whitespace
+      - id: end-of-file-fixer
+        name: 📄 Fix end of files
+  - repo: https://github.com/google/yamlfmt
+    rev: v0.19.0
+    hooks:
+      - id: yamlfmt
+        name: 🎨 Format YAML
+  - repo: https://github.com/rhysd/actionlint
+    rev: v1.7.12
+    hooks:
+      - id: actionlint
+        name: ⚙️ Lint GitHub Actions
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.30.0
+    hooks:
+      - id: gitleaks
+        name: 🔒 Detect secrets
+  - repo: local
+    hooks:
+      - id: cargo-fmt
+        name: 🦀 Check Rust formatting (root workspace)
+        entry: cargo fmt --all -- --check
+        language: system
+        files: '\.rs$'
+        pass_filenames: false
+      - id: cargo-check
+        name: 🦀 Check Rust (root workspace)
+        entry: cargo check --workspace --all-targets
+        language: system
+        files: '\.rs$'
+        pass_filenames: false
+      - id: cargo-clippy
+        name: 🦀 Lint Rust (root workspace)
+        entry: cargo clippy --workspace --all-targets -- -D warnings
+        language: system
+        files: '\.rs$'
+        pass_filenames: false
