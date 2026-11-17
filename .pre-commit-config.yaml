@@ -14,7 +14,7 @@ repos:
       - id: end-of-file-fixer
         name: 📄 Fix end of files
   - repo: https://github.com/google/yamlfmt
-    rev: v0.19.0
+    rev: v0.21.0
     hooks:
       - id: yamlfmt
         name: 🎨 Format YAML
