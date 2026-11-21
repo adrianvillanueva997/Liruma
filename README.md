@@ -1,9 +1,9 @@
-# What is Zenthos?
+# What is Liruma?
 
-**Zenthos** is a fusion of *Zen*, clarity, simplicity, focus, and *Pathos*, emotion, experience.
-It represents a calm yet powerful platform designed to bring harmony between embedded systems and cloud intelligence.
+**Liruma** evokes the harmony of the lyre, the light of *luz*, and the atmosphere of *bruma*.
+It is a place where curiosity becomes craftsmanship: a calm yet powerful platform designed to bring harmony between embedded systems and cloud intelligence.
 
-Zenthos is about building thoughtful, robust technology that feels seamless from edge to cloud.
+Liruma is about building thoughtful, robust technology that feels seamless from edge to cloud.
 
 It is a personal systems-engineering laboratory: projects evolve independently by default and integrate only when useful.
 
